@@ -1,0 +1,41 @@
+{
+  "name": "02---bases",
+  "version": "0.0.1",
+  "description": "La primera app de Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MasterofElectronic/Node_bases.git"
+  },
+  "author": "Jhonathan Murcia",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.11",
+    "@types/uuid": "^10.0.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/MasterofElectronic/Node_bases/issues"
+  },
+  "homepage": "https://github.com/MasterofElectronic/Node_bases#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "get-age": "^1.0.1",
+    "uuid": "^9.0.1",
+    "winston": "^3.13.1"
+  }
+}
